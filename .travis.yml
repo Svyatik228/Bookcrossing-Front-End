@@ -26,5 +26,6 @@ deploy:
   username: $username
   password: $password
   site: https://bookcrossingfrontend.azurewebsites.net
+  slot: https://bookcrossingfrontend.scm.azurewebsites.net:443/bookcrossingfrontend.git
   edge: true # opt in to dpl v2
   on: develop
