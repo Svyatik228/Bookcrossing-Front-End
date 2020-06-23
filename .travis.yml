@@ -19,7 +19,7 @@ before_script:
   - npm install -g @angular/cli
   
 script:
-  - npm run-script build --prod --base-href $base_href 
+  - npm run-script build --base-href $base_href 
   
 deploy:
   provider: heroku
