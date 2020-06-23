@@ -22,10 +22,7 @@ script:
   - npm run-script build --prod --base-href $base_href 
   
 deploy:
-  provider: azure_web_apps
-  username: $username
-  password: $password
-  site: https://bookcrossingfrontend.azurewebsites.net
-  slot: https://bookcrossingfrontend.scm.azurewebsites.net:443/bookcrossingfrontend.git
-  edge: true # opt in to dpl v2
+  provider: heroku
+  api_key: $API_Key
+  app: book-crossing-dev
   on: develop
