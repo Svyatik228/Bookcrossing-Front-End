@@ -25,4 +25,6 @@ deploy:
   provider: heroku
   api_key: $API_Key
   app: book-crossing-dev
+  run: 
+    - npm run-script start
   on: develop
