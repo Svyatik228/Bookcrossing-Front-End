@@ -3,7 +3,7 @@ sudo: false
 
 language: node_js
 node_js:
-  - '9'
+  - '13.7.0'
 
 addons:
     chrome: stable
@@ -19,7 +19,4 @@ before_script:
   - npm install -g @angular/cli
   
 script:
-  - ng lint
-  - ng test -watch false -browsers ChromeHeadless
-  - ng e2e 
   - npm run-script build --prod --base-href $base_href 
