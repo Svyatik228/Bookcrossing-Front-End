@@ -20,3 +20,10 @@ before_script:
   
 script:
   - npm run-script build --prod --base-href $base_href 
+  
+deploy:
+  provider: azure_web_apps
+  username: $username
+  password: $password
+  site: https://bookcrossingfrontend.azurewebsites.net
+  edge: true # opt in to dpl v2
